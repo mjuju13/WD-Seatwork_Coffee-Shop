@@ -13,7 +13,7 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  We serve some yummy and delish coffee and tea buy now!
 </div>
 
 <br />
@@ -62,9 +62,9 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
+- What is the project - create a website for a coffee shop
+- Whats the purpose - to build our own functioning multi-page website
+- What are key components - about the coffee shop, the menus of the shop, and a homepage that should be functioning
 - What technology used and how it is used
 
 ### Key Components
