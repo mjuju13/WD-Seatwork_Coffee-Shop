@@ -3,23 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Cafe France</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <ul class="sidebar">
-      <li><a href="./pages/Coffee/index.html"></a></li>
-      <li><a href="./pages/Coffee/index.html"></a></li>
-      <li><a href="./pages/Tea/index.html"></a></li>
-      <li><a href="./pages/About Us/index.html"></a></li>
-      
-      </ul>
-      
-      <input type="checkbox" id="sidebar-btn" class="sidebar-btn" checked/>
-      <label for="sidebar-btn"></label>
-      
-      <div class="content">
-        <h1>Coffee Bean</h1>
+<body class="font-sans">
+
+  <!-- Navigation Header -->
+  <header class="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
+    <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="./assets/img/cafefrance_corp__logo.jfif" alt="logo" class="w-24 sm:w-36 md:w-20 lg:w-15" />
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="menuToggle" class="lg:hidden ml-auto p-2 bg-white rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-black" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation Menu -->
+      <div id="menu" class="lg:ml-10 lg:flex lg:space-x-6 hidden">
+        <ul class="flex space-x-6">
+          <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
+          <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Coffee</a></li>
+          <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li>
+          <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li>
+        </ul>
       </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobileMenu" class="lg:hidden bg-white absolute top-0 left-0 w-full h-screen p-6 shadow-md hidden">
+    <button id="closeMenu" class="absolute top-4 right-4 p-2 bg-white rounded-full text-black">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <ul class="space-y-4 mt-10">
+      <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
+      <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Coffee</a></li>
+      <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li>
+      <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li>
+    </ul>
+  </div>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    const menu = document.getElementById('menu');
+
+    // Toggle the visibility of the mobile menu
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close the mobile menu when the close button is clicked
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+
+    // For larger screens, show the navigation menu
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        mobileMenu.classList.add('hidden');
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
+
+  <!-- Main Header Section with Background Color -->
+  <header class="bg-blue-300 py-96">
+    <div class="text-blue-800 text-center">
+      <!-- Larger Heading Text and Different Font -->
+      <h1 class="text-7xl font-serif font-bold">Welcome to Cafe France</h1>
+      <p class="mt-6 text-2xl">Your favorite place for the French coffee experience</p>
+    </div>
+  </header>
+
 </body>
 </html>
+

@@ -6,14 +6,14 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/Screenshot 2024-11-21 090650.png="Pongcatzzs" width="130" height="100">
+    <img src="./assets/img/Screenshot 2024-11-21 090650.png"
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Coffee Shopee</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  We serve some yummy and delish coffee and tea buy now!
+  We serve some yummy and delish coffee and tea buy now
 </div>
 
 <br />
