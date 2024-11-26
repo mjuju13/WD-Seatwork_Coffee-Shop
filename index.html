@@ -11,46 +11,79 @@
 <body class="font-sans">
 
   <!-- Navigation Header -->
-  <header class="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
-    <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
+<header class="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
+  <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
       <!-- Logo -->
       <a href="index.html">
-        <img src="./assets/img/cafefrance_corp__logo.jfif" alt="logo" class="w-24 sm:w-36 md:w-20 lg:w-15" />
+          <img src="./assets/img/cafefrance_corp__logo.jfif" alt="logo" class="w-24 sm:w-36 md:w-20 lg:w-15" />
       </a>
 
       <!-- Mobile Menu Toggle Button -->
       <button id="menuToggle" class="lg:hidden ml-auto p-2 bg-white rounded-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-black" viewBox="0 0 24 24">
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-black" viewBox="0 0 24 24">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
       </button>
 
       <!-- Navigation Menu -->
       <div id="menu" class="lg:ml-10 lg:flex lg:space-x-6 hidden">
-        <ul class="flex space-x-6">
-          <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
-          <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Coffee</a></li>
-          <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li>
-          <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li>
-        </ul>
+          <ul class="flex space-x-6">
+              <li><a href="/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
+              <li><a href="/pages/Order Now!/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li> <!-- Link to Order Page -->
+              <li><a href="/pages/Coffee/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Menu</a></li> <!-- Link to Order Page -->
+              <li><a href="/pages/About Us/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li> <!-- Link to Order Page -->
+            
+          </ul>
       </div>
-    </div>
-  </header>
-
-  <!-- Mobile Menu (Hidden by default) -->
-  <div id="mobileMenu" class="lg:hidden bg-white absolute top-0 left-0 w-full h-screen p-6 shadow-md hidden">
-    <button id="closeMenu" class="absolute top-4 right-4 p-2 bg-white rounded-full text-black">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-        <path d="M6 18L18 6M6 6l12 12"></path>
-      </svg>
-    </button>
-    <ul class="space-y-4 mt-10">
-      <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
-      <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Coffee</a></li>
-      <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li>
-      <li><a href="javascript:void(0)" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li>
-    </ul>
   </div>
+</header>
+
+
+  </header>
+  <div class="flex gap-4 max-sm:flex-col items-center justify-center text-center bg-orange-600 text-white px-5 py-2.5 rounded font-[sans-serif]">
+    <p class="text-base">Free Limited Edition Planner for Online Orders till November 30 only!</p>
+
+    <div class="flex gap-2">
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-300 py-96 text-center text-blue-900">
+    <h1 class="text-9xl font-serif bold">Welcome to Cafe France</h1>
+    <p class="mt-6 text-2xl">Experience the finest French coffee</p>
+    <a href="#order" class="mt-8 inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-xl hover:bg-blue-100">Order Now</a>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-20 bg-blue-500 text-center">
+    <h2 class="text-4xl font-semibold font-serif text-slate-800">What is Cafe France?</h2>
+    <p class="mt-4 text-lg text-white max-w-3xl mx-auto">We are a French-inspired cafe offering premium coffees from France made with passion and love. Join us for a delightful coffee experience inside our humble cafe.</p>
+  </section>
+
+<!-- Menu Section -->
+<section id="menu" class="py-20 bg-white text-center">
+  <h2 class="text-7xl font-serif text-blue-900">Check our place</h2>
+  <p class="mt-4 text-lg text-gray-600">Discover our selection of delicious coffee and pastries</p>
+  
+  <!-- Grid of coffee items -->
+  <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center">
+    <!-- Coffee Item 1 -->
+    <div class="bg-blue-100 p-5 rounded-lg shadow-md text-center w-full">
+      <img src="./assets/img/nick-hillier-xBXF9pr6LQo-unsplash (1).jpg" class="w-full h-72 object-contain rounded-md">
+      <h3 class="mt-4 text-xl font-semibold">Indoor Area</h3>
+    </div>
+    <!-- Coffee Item 2 -->
+    <div class="bg-blue-100 p-6 rounded-lg shadow-md text-center w-full">
+      <img src="./assets/img/360_F_655355953_2U78oyWjJoZ8DL8SFhTiwbq9MnpsqLSV.jpg" class="w-full h-72 object-contain rounded-md">
+      <h3 class="mt-4 text-xl font-semibold">Outdoor Area</h3>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="bg-blue-500 text-black text-center py-6">
+    <p>&copy; 2024 Cafe France | All rights reserved</p>
+  </footer>
 
   <!-- JavaScript for Menu Toggle -->
   <script>
@@ -80,15 +113,5 @@
     });
   </script>
 
-  <!-- Main Header Section with Background Color -->
-  <header class="bg-blue-300 py-96">
-    <div class="text-blue-800 text-center">
-      <!-- Larger Heading Text and Different Font -->
-      <h1 class="text-7xl font-serif font-bold">Welcome to Cafe France</h1>
-      <p class="mt-6 text-2xl">Your favorite place for the French coffee experience</p>
-    </div>
-  </header>
-
 </body>
 </html>
-

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cafe France</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+      /* Add background image to the section */
+      .bg-image {
+        background-image: url('../assets/img/your-image.jpg'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 50px 0; /* Add padding to adjust the size of the section */
+      }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Navigation Header -->
+  <header class="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
+    <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
+      <!-- Logo with Image -->
+      <a href="/index.html"> <!-- Ensure this is the correct link for your homepage -->
+        <img src="./assets/img/cafefrance_corp__logo.jfif" alt="Cafe France Logo" class="w-24 sm:w-36 md:w-20 lg:w-15" />
+      </a>
+      <div id="menu" class="lg:ml-10 lg:flex lg:space-x-6 hidden">
+        <ul class="flex space-x-6">
+            <li><a href="/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
+            <li><a href="/pages/Order Now!/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li> <!-- Link to Order Page -->
+            <li><a href="/pages/Coffee/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Menu</a></li> <!-- Link to Order Page -->
+            <li><a href="/pages/About Us/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li> <!-- Link to Order Page -->
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section for abt us -->
+  <section class="bg-image text-center text-white">
+    <h2 class="text-6xl font-semibold font-serif text-blue-800">What is Cafe France?</h2>
+    <p class="mt-4 text-lg max-w-3xl mx-auto  text-blue-800">At Cafe France, we invite you to experience the warmth and elegance of French culture through every sip. Inspired by a journey to the heart of France, we bring you the finest French coffees, made with passion, and a love for the timeless art of French café life.</p>
+  </section>
+
+  <!-- component -->
+  <div class="h-screen w-full overflow-hidden flex flex-nowrap text-center" id="slider">
+    <!-- First Slide with Blue Background and Image -->
+    <div class="bg-blue-600 text-white font-serif space-y-4 flex-none w-full flex flex-col items-center justify-center relative">
+        <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url('./assets/img/french-press-brewing-guide.jpg');"></div>
+        <div class="relative z-10">
+            <h2 class="text-6xl max-w-md">We use French Press for brewing</h2>
+            <p class="max-w-md font-sans text-1xl">It is sure that our coffee is brewed perfectly every time.</p>
+        </div>
+    </div>
+    
+    <!-- Second Slide with Pink Background and Image -->
+    <div class="bg-blue-600 text-white font-serif space-y-4 flex-none w-full flex flex-col items-center justify-center relative">
+        <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url(./assets/img/coffee.jpg);"></div>
+        <div class="relative z-12">
+            <h2 class="text-6xl max-w-md">Our beans are sourced from Paris</h2>
+            <p class="max-w-md font-sans text-1xl">This gives our coffees its signature taste and aroma.</p>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.querySelector('#slider');
+        setTimeout(function moveSlide() {
+            const max = slider.scrollWidth - slider.clientWidth;
+            const left = slider.clientWidth;
+
+            if (max === slider.scrollLeft) {
+                slider.scrollTo({left: 0, behavior: 'smooth'})
+            } else {
+                slider.scrollBy({left, behavior: 'smooth'})
+            }
+
+            setTimeout(moveSlide, 2000)
+        }, 2000)
+    })
+  </script>
+
+  <!-- Section with a colored background below the previous section -->
+  <section class="bg-blue-500 py-20">
+    <h3 class="text-3xl font-semibold text-white text-center">Join Us Today</h3>
+    <p class="mt-4 text-lg text-white text-center max-w-2xl mx-auto">Experience the finest coffee, curated for those who appreciate the art of French coffee brewing.</p>
+  </section>
+
+  <footer class="bg-blue-500 text-black text-center py-6">
+    <p>&copy; 2024 Cafe France | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
