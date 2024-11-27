@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cafe France</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+      /* Add background image to the section */
+      .bg-image {
+        background-image: url('../assets/img/your-image.jpg'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 50px 0; /* Add padding to adjust the size of the section */
+      }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Navigation Header -->
+  <header class="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
+    <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
+      <!-- Logo with Image -->
+      <a href="/index.html"> <!-- Ensure this is the correct link for your homepage -->
+        <img src="./assets/img/cafefrance_corp__logo.jfif" alt="Cafe France Logo" class="w-24 sm:w-36 md:w-20 lg:w-15" />
+      </a>
+      <div id="menu" class="lg:ml-10 lg:flex lg:space-x-6 hidden">
+        <ul class="flex space-x-6">
+            <li><a href="/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
+            <li><a href="/pages/Order Now!/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li> <!-- Link to Order Page -->
+            <li><a href="/pages/Coffee/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Menu</a></li> <!-- Link to Order Page -->
+            <li><a href="/pages/About Us/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li> <!-- Link to Order Page -->
+        </ul>
+      </div>
+    </div>
+  </header>
+
+</header>
+<!-- Announcement Bar -->
+<div class="flex gap-4 max-sm:flex-col items-center justify-center text-center bg-orange-600 text-white px-5 py-2.5 rounded font-[sans-serif] relative z-20">
+  <p class="text-base">Free Limited Edition Planner for Online Reservations till November 30 only!</p>
+
+  <div class="flex gap-2">
+  </div>
+</div>
+
+ <!-- Section for abt us -->
+ <section class="bg-image text-center text-white">
+    <h2 class="text-6xl font-semibold font-serif text-blue-800">Choose Your Drinks Here</h2>
+    <p class="mt-4 text-lg max-w-3xl mx-auto  text-blue-800">We are revamping our menu, so stay tuned for more items in coming months!</p>
+  </section>
+
+  <div class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h1 class="text-4xl font-bold tracking-tight text-brown-700 font-serif">Best Sellers</h1>
+        <h2 class="text-2xl font-semibold tracking-tight text-blue-800 mt-2 font-sans">Top Picks for You</h2>
+        <!-- Product 1-->
+        <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+            <!-- Product 1 -->
+            <div class="group relative">
+                <img src="./assets/img/brewed.jpg" alt="Brewed Coffee." class="aspect-square w-full rounded-md bg-blue-800 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                <div class="mt-4 flex justify-between">
+                    <div>
+                        <h3 class="text-sm text-blue-700 font-semibold font-serif">
+                            <a href="/pages/Order Now!/index.html">
+                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                Fresh Brewed Coffee
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-sm text-gray-500 font-sans">Made with Parisian coffee beans and served hot</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900 font-serif font-bold">P150</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="group relative">
+                <img src="./assets/img/mocha.jpg" alt="Cafe Mocha." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                <div class="mt-4 flex justify-between">
+                    <div>
+                        <h3 class="text-sm text-blue-700 font-bold font-serif">
+                            <a href="/pages/Order Now!/index.html">
+                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                Cafe Mocha
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-sm text-gray-500 font-sans">Made with Parsian coffee, mixed with milk and mocha syrup, served hot</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900 font-serif">P180</p>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="group relative">
+                <img src="./assets/img/french vanilla.jpg" alt="Front of men's Basic Tee in gray." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                <div class="mt-4 flex justify-between">
+                    <div>
+                        <h3 class="text-sm text-blue-700 font-bold font-serif">
+                            <a href="/pages/Order Now!/index.html">
+                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                Iced French Vanilla
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-sm text-gray-500 font-sans">Made with espresso, milk, and Monin French vanilla syrup, served over ice</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900 font-serif">P200</p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="group relative">
+                <img src="./assets/img/macchiato.jpg" alt="Front of men's Basic Tee in blue." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                <div class="mt-4 flex justify-between">
+                    <div>
+                        <h3 class="text-sm text-blue-700 font-bold font-serif">
+                            <a href="/pages/Order Now!/index.html">
+                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                Iced Caramel Macchiato
+                            </a>
+                        </h3>
+                        <p class="mt-1 text-sm text-gray-500 font-sans">Made with espresso, milk, and Lala's Caramel syrup, served over ice</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900 font-serif">P200</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- component -->
+  <div class="h-screen w-full overflow-hidden flex flex-nowrap text-center" id="slider">
+    <!-- First Slide with Blue Background and Image -->
+    <div class="bg-blue-600 text-white font-serif space-y-4 flex-none w-full flex flex-col items-center justify-center relative">
+        <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url(.//assets/img/coffee.jpg);"></div>
+        <div class="relative z-10">
+            <h1 class="text-6xl max-w-md">Our beans are sourced from Paris</h1>
+            <h3 class="max-w-md font-sans font-bold text-1xl">This gives our coffees its signature taste and aroma</h3>
+        </div>
+    </div>
+    
+    <!-- Second Slide with Pink Background and Image -->
+    <div class="bg-blue-600 text-white font-serif space-y-4 flex-none w-full flex flex-col items-center justify-center relative">
+        <div class="absolute inset-0 bg-cover bg-center opacity-50" style="background-image: url(.//assets/img/french-press-brewing-guide.jpg);"></div>
+        <div class="relative z-12">
+            <h1 class="text-6xl max-w-md">We use French Press to brew our coffees</h1>
+            <h3 class="max-w-md font-sans font-bold text-1xl">This gives it that rich, bold yet subtle signture taste well all love.</h3>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.querySelector('#slider');
+        setTimeout(function moveSlide() {
+            const max = slider.scrollWidth - slider.clientWidth;
+            const left = slider.clientWidth;
+
+            if (max === slider.scrollLeft) {
+                slider.scrollTo({left: 0, behavior: 'smooth'})
+            } else {
+                slider.scrollBy({left, behavior: 'smooth'})
+            }
+
+            setTimeout(moveSlide, 2000)
+        }, 2000)
+    })
+  </script>
+
+  <!-- Section with a colored background below the previous section -->
+  <section class="bg-blue-500 py-10">
+    <h3 class="text-4xl font-semibold font-serif text-blue-800 text-center">Join Us Today</h3>
+    <h1 class="mt-4 text-lg font-sans text-white text-center max-w-1mx-auto">Experience the rich history and finest coffee, curated for those who appreciate the art of French coffee brewing.</h1>
+  </section>
+
+  <footer class="bg-blue-500 text-black text-center py-6">
+    <p>&copy; 2024 Cafe France | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    const menu = document.getElementById('menu');
+
+    // Toggle the visibility of the mobile menu
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close the mobile menu when the close button is clicked
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+
+    // For larger screens, show the navigation menu
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        mobileMenu.classList.add('hidden');
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
 

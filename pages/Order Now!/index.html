@@ -1,1 +1,166 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Cafe France</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+      /* Add background image to the section */
+      .bg-image {
+        background-image: url('../assets/img/your-image.jpg'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 50px 0; /* Add padding to adjust the size of the section */
+      }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Navigation Header -->
+  <header class="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
+    <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
+      <!-- Logo with Image -->
+      <a href="/index.html"> <!-- Ensure this is the correct link for your homepage -->
+        <img src="./img/cafefrance_corp__logo.jfif" alt="Cafe France Logo" class="w-24 sm:w-36 md:w-20 lg:w-15" />
+      </a>
+      <div id="menu" class="lg:ml-10 lg:flex lg:space-x-6 hidden">
+        <ul class="flex space-x-6">
+            <li><a href="/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
+            <li><a href="/pages/Order Now!/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li> <!-- Link to Order Page -->
+            <li><a href="/pages/Coffee/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Menu</a></li> <!-- Link to Order Page -->
+            <li><a href="/pages/About Us/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li> <!-- Link to Order Page -->
+        </ul>
+      </div>
+    </div>
+  </header>
+
+</header>
+<!-- Announcement Bar -->
+<div class="flex gap-4 max-sm:flex-col items-center justify-center text-center bg-orange-600 text-white px-5 py-2.5 rounded font-[sans-serif] relative z-20">
+  <p class="text-base">Free Limited Edition Planner for Online Reservations till November 30 only!</p>
+
+  <div class="flex gap-2">
+  </div>
+</div>
+
+<!-- Background Image (Covering Full Screen and Scrollable) -->
+<div class="absolute inset-0 bg-cover bg-center opacity-80" 
+     style="background-image: url('./img/starry-night-1024x811.jpg.jfif'); background-size: cover; background-position: center; height: 130vh;">
+</div>
+
+
+<!-- Main Content Wrapper -->
+<div class="relative z-80 min-h-screen pt-40 pb-"> 
+
+<!-- Order Form Container -->
+<div class="relative z-10 max-w-2xl mx-auto px-6 py-8 bg-white rounded-lg shadow-lg my-6"> <!-- Changed my-8 to my-6 -->
+    <h2 class="text-5xl font-bold font-serif text-center text-brown-700 mb-10">Order Now!</h2>
+
+    <form action="#" method="POST">
+        <!-- Name Field -->
+        <div class="mb-6">
+            <label for="name" class="block text-lg font-bold font-serif text-slate-800">Enter your Name</label>
+            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        </div>
+
+        <!-- To Go or Dine In -->
+        <div class="mb-6">
+            <label class="block text-lg font-bold font-serif text-slate-800 mb-2">Dining Option</label>
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center">
+                    <input type="radio" id="toGo" name="diningOption" value="To Go" class="h-5 w-5 text-blue-500 focus:ring-2 focus:ring-blue-500">
+                    <label for="toGo" class="ml-3 text-lg font-medium font-serif text-blue-800">For Pickup</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="radio" id="dineIn" name="diningOption" value="Dine In" class="h-5 w-5 text-blue-500 focus:ring-2 focus:ring-blue-500">
+                    <label for="dineIn" class="ml-3 text-lg font-medium font-serif text-blue-800">Advance Reservation</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Selections (Checkboxes) -->
+        <div class="mb-6">
+            <label class="block text-lg font-bold font-serif text-slate-800 mb-2">Select Menu Items</label>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <input type="checkbox" id="coffee" name="menu[]" value="Coffee" class="h-5 w-5 text-blue-500 focus:ring-2 focus:ring-blue-500">
+                    <label for="coffee" class="ml-3 text-lg font-medium font-serif text-blue-800">Fresh Brewed Coffee -   P150</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="croissant" name="menu[]" value="Croissant" class="h-5 w-5 text-blue-500 focus:ring-2 focus:ring-blue-500">
+                    <label for="croissant" class="ml-3 text-lg font-medium font-serif text-blue-800">Cafe Mocha -   P180</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="bagel" name="menu[]" value="Bagel" class="h-5 w-5 text-blue-500 focus:ring-2 focus:ring-blue-500">
+                    <label for="bagel" class="ml-3 text-lg font-medium font-serif text-blue-800">Iced French Vannila Latte -   P200</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="sandwich" name="menu[]" value="Sandwich" class="h-5 w-5 text-blue-500 focus:ring-2 focus:ring-blue-500">
+                    <label for="sandwich" class="ml-3 text-lg font-medium font-serif text-blue-800">Iced Caramel Macchiato -   P200</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notes Field -->
+        <div class="mb-6">
+            <label for="notes" class="block text-lg font-bold font-serif text-slate-800 mb-2">Any Notes or Special Requests?</label>
+            <textarea id="notes" name="notes" rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Write any notes or special requests here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+
+        <div class="text-center">
+            <button type="submit" class="px-8 py-4 bg-blue-800 text-white text-lg font-medium rounded-lg hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-800">Place Order</button>
+        </div>
+    </form>
+</div>
+
+
+<!-- Section for About Us -->
+<section class="bg-blue-800 text-center text-white py-10">
+    <h2 class="text-6xl font-semibold font-serif text-blue-100">Do you do delivery?</h2>
+    <p class="mt-4 text-lg max-w-3xl mx-auto text-blue-100"> At the moment we halted our delivery services due to some circumstances in our riders. But you can opt to book from a delivery service app of your choice.</p>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-blue-500 text-black text-center py-4">
+    <p>&copy; 2024 Cafe France | All rights reserved</p>
+</footer>
+
+
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    const menu = document.getElementById('menu');
+
+    // Toggle the visibility of the mobile menu
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close the mobile menu when the close button is clicked
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+
+    // For larger screens, show the navigation menu
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        mobileMenu.classList.add('hidden');
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>

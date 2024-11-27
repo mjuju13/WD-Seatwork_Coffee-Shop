@@ -41,18 +41,25 @@
 
   </header>
   <div class="flex gap-4 max-sm:flex-col items-center justify-center text-center bg-orange-600 text-white px-5 py-2.5 rounded font-[sans-serif]">
-    <p class="text-base">Free Limited Edition Planner for Online Orders till November 30 only!</p>
+    <p class="text-base">Free Limited Edition Planner for Online Reservations till November 30 only!</p>
 
     <div class="flex gap-2">
     </div>
   </div>
 
   <!-- Hero Section -->
-  <section class="bg-blue-300 py-96 text-center text-blue-900">
-    <h1 class="text-9xl font-serif bold">Welcome to Cafe France</h1>
-    <p class="mt-6 text-2xl">Experience the finest French coffee</p>
-    <a href="#order" class="mt-8 inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-xl hover:bg-blue-100">Order Now</a>
-  </section>
+  
+  <div class="h-screen w-full overflow-hidden text-center relative">
+    <div class="absolute inset-0 bg-cover bg-center opacity-50"
+         style="background-image: url('./assets/img/nick-hillier-xBXF9pr6LQo-unsplash\ \(1\).jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
+    </div>
+    
+    <div class="relative z-10 text-brown-700 font-serif space-y-4 flex flex-col items-center justify-center h-full">
+      <h2 class="text-8xl max-w-md">Welcome to Cafe France</h2>
+      <p class="max-w-md font-sans text-2xl">Experience the finest French coffee.</p>
+    </div>
+  </div>
+  
 
   <!-- About Us Section -->
   <section id="about" class="py-20 bg-blue-500 text-center">
@@ -60,25 +67,20 @@
     <p class="mt-4 text-lg text-white max-w-3xl mx-auto">We are a French-inspired cafe offering premium coffees from France made with passion and love. Join us for a delightful coffee experience inside our humble cafe.</p>
   </section>
 
-<!-- Menu Section -->
-<section id="menu" class="py-20 bg-white text-center">
-  <h2 class="text-7xl font-serif text-blue-900">Check our place</h2>
-  <p class="mt-4 text-lg text-gray-600">Discover our selection of delicious coffee and pastries</p>
-  
-  <!-- Grid of coffee items -->
-  <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center">
-    <!-- Coffee Item 1 -->
-    <div class="bg-blue-100 p-5 rounded-lg shadow-md text-center w-full">
-      <img src="./assets/img/nick-hillier-xBXF9pr6LQo-unsplash (1).jpg" class="w-full h-72 object-contain rounded-md">
-      <h3 class="mt-4 text-xl font-semibold">Indoor Area</h3>
-    </div>
-    <!-- Coffee Item 2 -->
-    <div class="bg-blue-100 p-6 rounded-lg shadow-md text-center w-full">
-      <img src="./assets/img/360_F_655355953_2U78oyWjJoZ8DL8SFhTiwbq9MnpsqLSV.jpg" class="w-full h-72 object-contain rounded-md">
-      <h3 class="mt-4 text-xl font-semibold">Outdoor Area</h3>
-    </div>
+<!-- ending -->
+
+<!-- component -->
+<div class="h-screen w-full overflow-hidden flex flex-nowrap text-center" id="slider">
+  <!-- First Slide with Blue Background and Image -->
+  <div class="bg-blue-800 text-white font-serif space-y-4 flex-none w-full flex flex-col items-center justify-center relative">
+      <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('./assets/img/starry-night-1024x811.jpg.jfif');"></div>
+      <div class="relative z-10">
+          <h1 class="text-8xl max-w-md">Be bold, and brave!</h1>
+          <h3 class="text-2xl max-w-md">In Cafe France we want you to be creative and quirky, join our loving community.</h3>
+      </div>
   </div>
-</section>
+  </div>
+</div>
 
   <!-- Footer Section -->
   <footer class="bg-blue-500 text-black text-center py-6">

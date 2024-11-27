@@ -6,23 +6,23 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/Screenshot 2024-11-21 090650.png"
+    <img src="./assets/img/cafefrance_corp__logo.jfif"
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Coffee Shopee</h3>
+  <h3 align="center">Cafe France</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  We serve some yummy and delish coffee and tea buy now
+  We serve some yummy and delish coffee buy now!
 </div>
 
 <br />
 
 [![wakatime](https://wakatime.com/badge/user/885e76dd-c38c-4c2c-82d0-b6b3b8054de8/project/af508dff-48fe-47a9-b672-b6c048e2af45.svg)](https://wakatime.com/badge/user/885e76dd-c38c-4c2c-82d0-b6b3b8054de8/project/af508dff-48fe-47a9-b672-b6c048e2af45)
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
+<!-- TODO: Change the zyx-0314 into your github username  --> mjujuu13
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![] https://github.com/mjuju13/WD-Seatwork_Coffee-Shop.git
 
 ---
 
@@ -59,26 +59,26 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+I made a website for Cafe France and changed its idenidity a bit since they still does not have any website and I highlighted their Makati branch but since resources are limited I get my assets from google, unsplashed, and adobe stock.
 
 Guiding Question:
 - What is the project - create a website for a coffee shop
 - Whats the purpose - to build our own functioning multi-page website
 - What are key components - about the coffee shop, the menus of the shop, and a homepage that should be functioning
-- What technology used and how it is used
+- What technology used and how it is used - I used tailwind.css for my codes and as the building blocks of my website.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Navbar that is working and linking it
+- Moving pictures as background
 
 ### Technology
 <!-- TODO: List of Technology Used -->
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+![HTML](https://readymadeui.com/)
+![CSS] -
+![JavaScript] -
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -119,4 +119,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Zus Coffee | bongga ng layout ih di ko kaya ganun pero happy na aq sa results:) | zuscoffee.com |
