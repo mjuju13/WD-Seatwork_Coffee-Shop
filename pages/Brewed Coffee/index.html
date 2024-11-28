@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cafe France</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+      /* Add background image to the section */
+      .bg-image {
+        background-image: url('../assets/img/your-image.jpg'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 50px 0; /* Add padding to adjust the size of the section */
+      }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Navigation Header -->
+  <header class="flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50">
+    <div class="flex flex-wrap items-center lg:gap-y-2 gap-4 w-full">
+      <!-- Logo with Image -->
+      <a href="/index.html"> <!-- Ensure this is the correct link for your homepage -->
+        <img src="./assets/img/cafefrance_corp__logo.jfif" alt="Cafe France Logo" class="w-24 sm:w-36 md:w-20 lg:w-15" />
+      </a>
+      <div id="menu" class="lg:ml-10 lg:flex lg:space-x-6 hidden">
+        <ul class="flex space-x-6">
+          <li><a href="./index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Home</a></li>
+          <li><a href="../Coffee/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Order Now</a></li> <!-- Link to Order Page -->
+          <li><a href="../Order Now!/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">Menu</a></li> <!-- Link to Order Page -->
+          <li><a href="../About Us/index.html" class="text-[#333] hover:text-[#007bff] text-[15px] font-semibold">About Us</a></li> <!-- Link to Order Page -->
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="font-sans">
+    <div class="p-4 lg:max-w-3xl max-w-lg mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Product Image -->
+            <img src="../Brewed Coffee/assets/img/brewed.jpg" alt="Product" class="w-full rounded-md object-cover shadow-lg" />
+        </div>
+
+        <div class="mt-6">
+            <!-- Product Title -->
+            <h2 class="text-2xl font-bold font-serif text-blue-800">Fresh Brewed Coffee</h2>
+
+           <!-- Product Price -->
+<div class="flex items-center gap-4 mt-4">
+  <p class="text-slate-800 text-xl font-bold">P150</p>
+</div>
+
+<!-- Order Now Button -->
+<a href="../Order Now!" class="w-60 mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-md transition duration-300 block text-center">
+  Order Here!
+</a>
+
+          
+            <!-- Product Description -->
+            <h3 class="text-xl font-bold font-serif text-blue-800 mt-6">Bold and Strong Coffee for You!</h3>
+            <p>Everyday in Cafe France we brew fresh Parisian coffee beans for good measure, the result a strong coffee that will surely wake you up.</p>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+  <footer class="bg-blue-500 text-black text-center py-6">
+    <p>&copy; 2024 Cafe France | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    const menu = document.getElementById('menu');
+
+    // Toggle the visibility of the mobile menu
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close the mobile menu when the close button is clicked
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+
+    // For larger screens, show the navigation menu
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        mobileMenu.classList.add('hidden');
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+
