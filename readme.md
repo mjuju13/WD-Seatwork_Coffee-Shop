@@ -20,6 +20,8 @@
 
 [![wakatime](https://wakatime.com/badge/user/885e76dd-c38c-4c2c-82d0-b6b3b8054de8/project/af508dff-48fe-47a9-b672-b6c048e2af45.svg)](https://wakatime.com/badge/user/885e76dd-c38c-4c2c-82d0-b6b3b8054de8/project/af508dff-48fe-47a9-b672-b6c048e2af45)
 
+https://camo.githubusercontent.com/257a6ad059822640e4ba75affa1d7eeb5c70b76a90cc1cc0866e4dfdc4d49a33/68747470733a2f2f76697369742d636f756e7465722e76657263656c2e6170702f636f756e7465722e706e673f706167653d6a6f6d617269646c722f57442d53656174776f726b2d50657266756d65
+
 <!-- TODO: Change the zyx-0314 into your github username  --> mjujuu13
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 ![] https://github.com/mjuju13/WD-Seatwork_Coffee-Shop.git
@@ -120,3 +122,5 @@ WD-ProjectName
 | Title | Purpose | Link |
 |-|-|-|
 | Zus Coffee | bongga ng layout ih di ko kaya ganun pero happy na aq sa results:) | zuscoffee.com |
+| Ready Made UI | main kuhaan ng code then modify ang ganap.| https://readymadeui.com/ | 
+| Tailwind UI | For the codes and everything. | https://tailwindui.com/ | 
