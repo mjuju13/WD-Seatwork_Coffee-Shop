@@ -18,18 +18,16 @@
 
 <br />
 
-[![wakatime](https://wakatime.com/badge/user/885e76dd-c38c-4c2c-82d0-b6b3b8054de8/project/af508dff-48fe-47a9-b672-b6c048e2af45.svg)](https://wakatime.com/badge/user/885e76dd-c38c-4c2c-82d0-b6b3b8054de8/project/af508dff-48fe-47a9-b672-b6c048e2af45)
-
-https://camo.githubusercontent.com/257a6ad059822640e4ba75affa1d7eeb5c70b76a90cc1cc0866e4dfdc4d49a33/68747470733a2f2f76697369742d636f756e7465722e76657263656c2e6170702f636f756e7465722e706e673f706167653d6a6f6d617269646c722f57442d53656174776f726b2d50657266756d65
-
 <!-- TODO: Change the zyx-0314 into your github username  --> mjujuu13
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![] https://github.com/mjuju13/WD-Seatwork_Coffee-Shop.git
+<img src="https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fmjuju13.github.io%2FWD-Seatwork_Coffee-Shop%2F&s=40&c=00ff00&bg=00000000&no=3&ff=digi&tb=&ta=" alt="visits">
 
 ---
 
 <br />
 <br />
+
+[![wakatime](https://wakatime.com/badge/user/885e76dd-c38c-4c2c-82d0-b6b3b8054de8/project/af508dff-48fe-47a9-b672-b6c048e2af45.svg)](https://wakatime.com/badge/user/885e76dd-c38c-4c2c-82d0-b6b3b8054de8/project/af508dff-48fe-47a9-b672-b6c048e2af45)
 
 <!-- TODO: If you want to add more layers for your readme -->
 <details>
@@ -78,9 +76,10 @@ Guiding Question:
 
 ### Technology
 <!-- TODO: List of Technology Used -->
-![HTML]- (https://readymadeui.com/)
-![CSS] -
-![JavaScript] -
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+![TailWind](https://readmebadge.vercel.app/badges/tailwind.svg)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
